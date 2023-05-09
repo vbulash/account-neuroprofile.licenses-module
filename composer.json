@@ -1,0 +1,35 @@
+{
+    "name": "vbulash/account-neuroprofile.licenses-module",
+    "description": "Модуль работы с лицензиями",
+	"license": "MIT",
+	"type": "laravel-module",
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "Валерий Булаш",
+            "email": "vbulash@yandex.ru"
+        }
+    ],
+	"require": {
+        "nwidart/laravel-modules": "^10.0",
+        "vbulash/laravel-module-installer": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+            }
+        },
+		"module-name": "licenses"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Licenses\\": ""
+        }
+    },
+	"config": {
+        "allow-plugins": {
+            "vbulash/laravel-module-installer": true
+        }
+    }
+}

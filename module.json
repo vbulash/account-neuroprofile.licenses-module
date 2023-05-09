@@ -1,0 +1,11 @@
+{
+    "name": "Licenses",
+    "alias": "licenses",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Licenses\\Providers\\LicensesServiceProvider"
+    ],
+    "files": []
+}
