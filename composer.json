@@ -3,7 +3,7 @@
     "description": "Модуль работы с лицензиями",
 	"license": "MIT",
 	"type": "laravel-module",
-    "version": "1.2",
+    "version": "2.0",
     "authors": [
         {
             "name": "Валерий Булаш",
