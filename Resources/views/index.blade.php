@@ -31,7 +31,8 @@
 				<button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"><i
 						class="si si-arrow-up"></i></button>
 			</div>
-			{{-- TODO Убрать отладочный вывод на страницу --}}
+			<!-- TODO Убрать отладочный вывод на страницу
+				-->
 			<p>{{ Modules\Licenses\Facades\License::showInfo() }}</p>
 		</div>
 		<div class="block-content block-content-full">
