@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller;
 use Modules\Licenses\Entities\License;
+use Modules\Licenses\Facades\License as LicenseFacade;
 use App\Models\LicenseStatus;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -60,14 +61,14 @@ class LicensesController extends Controller {
 	}
 
 	public function export(int $contract) {
-		return Modules\Licenses\Facades\License::export($contract);
+		return LicenseFacade::export($contract);
 	}
 
 	public function repair(Request $request, int $contract) {
-		Modules\Licenses\Facades\License::repair($request->license);
+		return LicenseFacade::repair($request->license);
 	}
 
 	public function info(int $contract): iterable {
-		return Modules\Licenses\Facades\License::info($contract);
+		return LicenseFacade::info($contract);
 	}
 }
