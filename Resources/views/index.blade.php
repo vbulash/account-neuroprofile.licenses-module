@@ -31,6 +31,7 @@
 				<button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"><i
 						class="si si-arrow-up"></i></button>
 			</div>
+			<p>{{ Modules\Licenses\Facades\License::showInfo() }}</p>
 		</div>
 		<div class="block-content block-content-full">
 			<table id="info"></table>

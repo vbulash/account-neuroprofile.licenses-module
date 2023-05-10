@@ -16,8 +16,9 @@
     },
     "extra": {
         "laravel": {
-            "providers": [],
+            "providers": ["Modules\\Licenses\\Providers\\LicenseServiceProvider"],
             "aliases": {
+				"license": "Modules\\Licenses\\Facades\\License"
             }
         },
 		"module-name": "licenses"
