@@ -3,7 +3,7 @@
     "description": "Модуль работы с лицензиями",
 	"license": "MIT",
 	"type": "laravel-module",
-    "version": "1.0",
+    "version": "1.1",
     "authors": [
         {
             "name": "Валерий Булаш",
@@ -23,6 +23,11 @@
         },
 		"module-name": "licenses"
     },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php vendor/bin/testbench package:discover --ansi"
+        ]
+    },
     "autoload": {
         "psr-4": {
             "Modules\\Licenses\\": ""
@@ -32,5 +37,8 @@
         "allow-plugins": {
             "vbulash/laravel-module-installer": true
         }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.5"
     }
 }
